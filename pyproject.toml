@@ -1,0 +1,44 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "tart_beam"
+version = "0.1.0"
+description = "Wide-angle polynomial beam patterns on the sphere for TART antennas"
+readme = "README.md"
+license = "GPL-3.0-or-later"
+requires-python = ">=3.11,<3.14"
+authors = [
+    { name = "Tim Molteno", email = "tim@elec.ac.nz" },
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Communications :: Ham Radio",
+    "Topic :: Scientific/Engineering :: Astronomy",
+]
+dependencies = [
+    "numpy (>=1.6.0,<3.0.0)",
+    "scipy (>=1.10.0,<2.0.0)",
+]
+
+[project.optional-dependencies]
+healpix = [
+    "healpy (>=1.16.0)",
+]
+dev = [
+    "pytest (>=7.0)",
+]
+
+[project.urls]
+Homepage = "http://github.com/tart-telescope/beams"
+
+[tool.hatch.build.targets.wheel]
+packages = ["tart_beam"]
+
+[tool.pytest.ini_options]
+testpaths = ["tart_beam/tests"]
