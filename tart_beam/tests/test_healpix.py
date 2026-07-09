@@ -1,5 +1,7 @@
 """End-to-end tests on a real HEALPix sphere (skipped if healpy is absent)."""
 
+# Copyright (c) 2026 Tim Molteno (tim@elec.ac.nz)
+
 import numpy as np
 import pytest
 

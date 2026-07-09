@@ -2,8 +2,10 @@
 
 A :class:`Beam` is a truncated spherical-harmonic series in the direction
 cosines of a local frame, multiplied by a ``w**q`` horizon taper and clipped to
-zero behind the antenna (``w < 0``). See ``DESIGN.md``.
+behind the antenna (``w < 0``). See ``DESIGN.md``.
 """
+
+# Copyright (c) 2026 Tim Molteno (tim@elec.ac.nz)
 
 import json
 

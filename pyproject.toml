@@ -1,9 +1,11 @@
+# Copyright (c) 2026 Tim Molteno (tim@elec.ac.nz)
+
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "tart_beam"
+name = "tart-beam"
 version = "0.1.0"
 description = "Wide-angle polynomial beam patterns on the sphere for TART antennas"
 readme = "README.md"

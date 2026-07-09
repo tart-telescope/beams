@@ -16,6 +16,8 @@ boresight (``w = 1``), ``el = 0`` is the horizon (``w = 0``), and ``el < 0`` is
 behind the antenna (``w < 0``, dropped by the fit).
 """
 
+# Copyright (c) 2026 Tim Molteno (tim@elec.ac.nz)
+
 import json
 
 import numpy as np

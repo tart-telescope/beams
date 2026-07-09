@@ -4,6 +4,8 @@ Run from the repo root:  python examples/demo.py
 The HEALPix steps are skipped automatically if healpy is not installed.
 """
 
+# Copyright (c) 2026 Tim Molteno (tim@elec.ac.nz)
+
 import os
 
 import numpy as np

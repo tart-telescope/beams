@@ -4,6 +4,8 @@ healpy is not required: we stub ``healpix_directions`` with a small fixed set of
 sky vectors, and inject a minimal fake ``healpy`` module for ``mosaic``.
 """
 
+# Copyright (c) 2026 Tim Molteno (tim@elec.ac.nz)
+
 import sys
 import types
 

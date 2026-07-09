@@ -1,5 +1,7 @@
 """Tests for the real spherical-harmonic basis."""
 
+# Copyright (c) 2026 Tim Molteno (tim@elec.ac.nz)
+
 import numpy as np
 import pytest
 

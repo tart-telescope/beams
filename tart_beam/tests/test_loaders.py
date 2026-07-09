@@ -1,5 +1,7 @@
 """Tests for the el/az/gain JSON loader."""
 
+# Copyright (c) 2026 Tim Molteno (tim@elec.ac.nz)
+
 import json
 
 import numpy as np

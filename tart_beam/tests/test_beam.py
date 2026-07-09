@@ -1,5 +1,7 @@
 """Tests for the Beam model: evaluation, horizon behaviour, fitting, pointing."""
 
+# Copyright (c) 2026 Tim Molteno (tim@elec.ac.nz)
+
 import numpy as np
 import pytest
 

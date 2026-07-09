@@ -4,6 +4,8 @@ See ``DESIGN.md`` section 7. ``healpy`` is imported lazily so the core beam
 model has no hard dependency on it.
 """
 
+# Copyright (c) 2026 Tim Molteno (tim@elec.ac.nz)
+
 import numpy as np
 
 

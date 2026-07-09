@@ -1,5 +1,7 @@
 # DESIGN: Wide-angle beam patterns on the sphere
 
+*Copyright (c) 2026 Tim Molteno (tim@elec.ac.nz)*
+
 ## 1. Purpose and requirements
 
 TART antennas are wide field-of-view elements: a single antenna sees essentially

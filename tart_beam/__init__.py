@@ -1,11 +1,14 @@
-"""tart_beam: wide-angle polynomial beam patterns on the sphere.
+"""tart-beam: wide-angle polynomial beam patterns on the sphere.
 
 See ``DESIGN.md`` for the representation: a truncated spherical-harmonic series
 in the direction cosines of a local frame, tapered by ``w**q`` and zero behind
 the antenna.
 """
 
+# Copyright (c) 2026 Tim Molteno (tim@elec.ac.nz)
+
 from .beam import Beam, make_frame
+from .defaults import base_tart_beam
 from .combine import (
     coverage_map,
     healpix_directions,
@@ -24,6 +27,7 @@ __version__ = "0.1.0"
 
 __all__ = [
     "Beam",
+    "base_tart_beam",
     "make_frame",
     "coverage_map",
     "partition_of_unity",

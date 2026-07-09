@@ -6,6 +6,8 @@ series, so we use real spherical harmonics ``Y_l^m(theta, phi)`` as the basis.
 See ``DESIGN.md`` section 3.
 """
 
+# Copyright (c) 2026 Tim Molteno (tim@elec.ac.nz)
+
 import numpy as np
 from scipy.special import lpmv
 
