@@ -22,6 +22,7 @@ from .loaders import (
     samples_from_records,
 )
 from .spherical import basis_matrix, real_sph_harm, sh_indices
+from . import viz  # optional (requires healpy + matplotlib)
 
 __version__ = "0.1.0"
 
@@ -40,4 +41,5 @@ __all__ = [
     "samples_from_records",
     "load_elaz_json",
     "fit_from_json",
+    "viz",
 ]

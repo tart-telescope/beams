@@ -117,6 +117,26 @@ cov = coverage_map(beams, nside=64)              # summed sensitivity
 sky, weight = mosaic(beams, per_beam_maps)        # inverse-variance mosaic
 ```
 
+### Visualise a beam
+
+The ``tart_beam.viz`` module provides helpers for plotting beam patterns
+(requires ``matplotlib``; HEALPix plots also need ``healpy``).
+
+```python
+from tart_beam import base_tart_beam, viz
+
+beam = base_tart_beam()
+
+# Elevation cut at a fixed azimuth — shows the uniform region and horizon taper
+fig, ax = viz.plot_el_cut(beam, az=0.0)
+
+# Azimuth cut at a fixed elevation — reveals rotational symmetry
+fig, ax = viz.plot_az_cut(beam, el=45.0)
+
+# Full-sky HEALPix mollweide map (requires healpy)
+viz.plot_healpix(beam, nside=64)
+```
+
 ## Input data format
 
 `fit_from_json` reads a JSON list of records, elevation and azimuth in degrees:
@@ -137,6 +157,7 @@ fitted beam afterwards with `beam.set_pointing(boresight)`.
 - `tart_beam/beam.py` — `Beam`: pointing, evaluation, fitting, (de)serialisation
 - `tart_beam/loaders.py` — el/az/gain JSON loader and `fit_from_json`
 - `tart_beam/combine.py` — full-sphere HEALPix products (coverage, mosaic, blend)
+- `tart_beam/viz.py` — visualisation: elevation/azimuth cuts and HEALPix maps
 
 ---
 *Copyright (c) 2026 Tim Molteno (tim@elec.ac.nz)*
