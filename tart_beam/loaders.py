@@ -35,6 +35,8 @@ def elaz_to_vec(el_deg, az_deg):
     """
     el = np.radians(np.asarray(el_deg, dtype=float))
     az = np.radians(np.asarray(az_deg, dtype=float))
+    # Broadcast scalar/array combinations so stacking works
+    el, az = np.broadcast_arrays(el, az)
     cos_el = np.cos(el)
     return np.stack([cos_el * np.cos(az), cos_el * np.sin(az), np.sin(el)],
                     axis=-1)

@@ -120,7 +120,7 @@ sky, weight = mosaic(beams, per_beam_maps)        # inverse-variance mosaic
 ### Visualise a beam
 
 The ``tart_beam.viz`` module provides helpers for plotting beam patterns
-(requires ``matplotlib``; HEALPix plots also need ``healpy``).
+(requires ``matplotlib``; HEALPix maps also need ``healpy``).
 
 ```python
 from tart_beam import base_tart_beam, viz
@@ -136,6 +136,11 @@ fig, ax = viz.plot_az_cut(beam, el=45.0)
 # Full-sky HEALPix mollweide map (requires healpy)
 viz.plot_healpix(beam, nside=64)
 ```
+
+| | |
+|---|---|
+| ![Elevation cut](doc/base_beam_el_cut.png) | ![Azimuth cuts](doc/base_beam_az_cuts.png) |
+| ![HEALPix map](doc/base_beam_healpix.png) | |
 
 ## Input data format
 
