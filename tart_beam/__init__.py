@@ -24,7 +24,7 @@ from .loaders import (
 from .spherical import basis_matrix, real_sph_harm, sh_indices
 from . import viz  # optional (requires healpy + matplotlib)
 
-__version__ = "0.1.0"
+__version__ = "0.2.0"
 
 __all__ = [
     "Beam",

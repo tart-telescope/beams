@@ -6,7 +6,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "tart-beam"
-version = "0.1.0"
+version = "0.2.0"
 description = "Wide-angle polynomial beam patterns on the sphere for TART antennas"
 readme = "README.md"
 license = "GPL-3.0-or-later"
